@@ -1,0 +1,142 @@
+*{
+  color:white;
+}
+body{
+ background-color: black;
+}
+.container{
+  margin-bottom: 15vh;
+}
+
+.pagetitle {
+  text-align: center;
+  padding: 5px;
+}
+
+/* ############## FOOTER STYLES #################################### */
+.mainFooter{
+   background-color:gray;
+   position: fixed;
+   bottom: 0%;
+   width: 100%;
+   text-align: center;
+   border-radius: 10px;
+}
+h1,h2,h3,h4,h5{
+  text-align: center;
+}
+.page-content{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.content {
+  font-family: cursive;
+}
+
+/*#################### Payment Section style ###################################### */
+.payment-option{
+  background-color: gray;
+  width: 100%;
+}
+
+
+/* ######################## NAVIGATION DESIGN ############################################## */
+.flex-nav {
+  display: flex;
+  float: left;
+}
+.img-design { 
+  width: 320px;
+  height: 320px;
+  margin-right: 2px;
+  margin-bottom: 7px;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: maroon; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color:  maroon;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+/*############################################# Display Images ############################*/
+.quote {
+  margin-top: 146px;
+}
+.Page-quote {
+  font-style: italic;
+  font-size: larger;
+  text-align: justify;
+}
+/* ######################### CONTACT DETAILS ############################### */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* end of the contact form */
+
+.contact-info{
+  text-align: center;
+}
+.contact-me{
+  font-size: 508%;
+  font-family: auto;
+}
+.author-name {
+  font-style: italic;
+  font-size: 185%;
+  font-family: auto;
+}
+.author-address {
+  font-style: italic;
+  font-size: 185%;
+  font-family: auto;
+}
+.author-email {
+  font-style: italic;
+  font-size: 185%;
+  font-family: auto;
+}
+.author-number {
+  font-style: italic;
+  font-size: 185%;
+  font-family: auto;
+}
+.above-footer {
+  background: url("/images/bluebackgroundImg.jpg") no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 101%;
+  margin-bottom: 25vh;
+}
