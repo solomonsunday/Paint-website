@@ -20,7 +20,6 @@ body{
    bottom: 0%;
    width: 100%;
    text-align: center;
-   border-radius: 10px;
 }
 h1,h2,h3,h4,h5{
   text-align: center;
@@ -51,6 +50,7 @@ h1,h2,h3,h4,h5{
   height: 320px;
   margin-right: 2px;
   margin-bottom: 7px;
+  margin-left: -12px;
 }
 
 .overlay {
@@ -90,6 +90,7 @@ input[type=text], select, textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  background: black;
 }
 
 input[type=submit] {
@@ -104,7 +105,6 @@ float: right;
 input[type=submit]:hover {
   background-color: #45a049;
 }
-/* end of the contact form */
 
 .contact-info{
   text-align: center;
@@ -133,10 +133,100 @@ input[type=submit]:hover {
   font-size: 185%;
   font-family: auto;
 }
+/* ####################################################### end of the contact form */
+
 .above-footer {
   background: url("/images/bluebackgroundImg.jpg") no-repeat;
   background-size: cover;
   height: 80vh;
   width: 101%;
   margin-bottom: 25vh;
+}
+
+.shop-list-container {
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15px;
+}
+.shop-image {
+  width: 224.5px;
+  height: 224.5px;
+  margin-left: -16px;
+
+}
+.paintDetail {
+  color: darkblue;
+  font: 200;
+  text-align: center;
+  font-size: medium;
+  font-family: fantasy;
+}
+.loadBtn {
+  color: black;
+  border: 1px solid blue;
+  padding: 15px;
+  border-radius: 14px;
+  margin-left: 428px;
+}
+.nav-styles {
+  padding: 19px;
+  margin-left: 782px;
+}
+.icon-placing {
+  margin: 8px;
+}
+
+/* ################# Preview Item Section###################### */
+.preview-item-wraper {
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10px;
+  margin-top: 95px;
+}
+.Item-title, .item-title2 {
+  padding: -2px;
+
+}
+.item-sample {
+  margin-top: 55px;
+  /* border: 1px solid; */
+  margin-bottom: 55px;
+}
+.write-up {
+  line-height: 3em;
+  margin-bottom: 92px;
+  font-family: cursive;
+}
+.item-title2{
+  margin-top: 63px;
+  margin-left: 30px;
+}
+.price {
+  margin-right: 302px;
+  margin-top: 44px;
+}
+.quantity {
+  font-family: cursive;
+  margin-left: 35px;
+}
+.qtyInput {
+  padding: 16px;
+  background: black;
+  margin-bottom: 38px;
+}
+
+input[type=number] {
+ 
+}
+.AddtoCart {
+  padding: 22px;
+  background: black;
+  padding-left: 194px;
+  text-align: center;
+  padding-right: 186px;
+  border-radius: 15px;
+  margin-bottom: 70px;
+  margin-left: 23px;
 }

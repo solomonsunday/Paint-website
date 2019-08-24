@@ -1,7 +1,7 @@
 (function (){
 
     "use strict";
-    angular.module("taskApp").controller("homeCtrl", ["$scope", "$state", function($scope, $state){
+    angular.module("paintApp").controller("homeCtrl", ["$scope", "$state", function($scope, $state){
 
       var vm = this;
 

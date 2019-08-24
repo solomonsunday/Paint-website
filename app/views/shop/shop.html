@@ -1,0 +1,18 @@
+<div class="shop-list-container">  
+
+  <div class="">
+    <div class="row img-fluid slideImg mb-5">        
+         <div  ng-repeat="paint in vm.paints" class="col-md-3 img-thumbnail rounded"> 
+                <a ui-sref="#" class="img-thumbnail">
+                <img ng-src="{{ paint.photo }}" class="shop-image" />
+                <div class="paintDetail"> {{paint.paintname}}</div> <br>
+                <div class="paintDetail"> {{paint.price}}</div>
+            </a> 
+        </div>  
+        <div>
+            <button class="mt-3 loadBtn" ng-click="">Load More</button>
+          </div>       
+  </div>
+</div>
+
+</div>

@@ -2,10 +2,10 @@
   <div class="card">
     <div class="row img-fluid slideImg">        
          <div  ng-repeat="paint in vm.paints" class="col-md-3 img-thumbnail rounded"> 
-           <a href="#" class="img-thumbnail">
+           <a ui-sref="#" class="img-thumbnail">
           <img ng-src="{{ paint.photo }}" class="img-design" />
-          <div style="color: blue; font: 100"> {{paint.paintname}}</div> <br>
-          <div style="color: blue; font: 100"> {{paint.price}}</div>
+          <div class="paintDetail"> {{paint.paintname}}</div> <br>
+          <div class="paintDetail"> {{paint.price}}</div>
           <div class="overlay">Click to Buy</div>
         </a> 
         </div>
@@ -17,7 +17,7 @@
 
 <div class="first-section mx-auto "> 
   
-<div><p class="badge-pill bg-danger mx-auto py-2 flo"style="text-align: center">Click here to See More Painting</p></div>
+<div> <a ui-sref="index.shop"> <p class="badge-pill bg-danger mx-auto py-2 flo"style="text-align: center">Click here to See More Painting</p></a></div>
 <div class="text-center"> 
     <img src="/images/March 11.jpg" class="align-content-center rounded-circle" width="400px" height="400px"alt="Owner's Image">
   </div>
@@ -93,7 +93,7 @@
               </div>
               <div class="col-6"> 
                 <div class="contact-Form">
-                      <form action="/action_page.php">
+                      <form>
                         <label for="fname">Full Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your  Full name..">
                     
@@ -109,7 +109,7 @@
                         <label for="subject">Message</label>
                         <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
                     
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Send">
                       </form>
                     </div>
                 </div>
@@ -119,8 +119,7 @@
       <div class="above-footer">
 
       </div>
-
-     </div>
+ </div>
   
    
 
