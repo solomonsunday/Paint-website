@@ -1,50 +1,51 @@
 <div>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Brand/logo -->
-    <a class="navbar-brand" ui-sref="index.home">
-      <img src="/images/logo2.jpg" style="width: 70px; height:45px" alt="logo"  class="site-logo">
-    </a>
-    
-    <!-- Links -->
-    <div class="flex-nav"> 
-      <ul class="navbar-nav nav-styles">
-          <li class="nav-item icon-placing">
-              <a class=""><i class="fas fa-phone-alt"> 786 802 9008 </i></a>
-            </li>
-          <li class="nav-item">
-          <a class="nav-link" ui-sref="index.home">Home</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" ui-sref="index.shop">Shop</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" ui-sref="index.previewitem">Preview Item</a>
-          </li>
-        <li class="nav-item icon-placing">
-          <a class=""><i class="fas fa-envelope-open"></i></a>
-        </li>
-        <!-- <hr style="width: 1px; height: 50px; display: inline-block; margin-top:-15px; background-color: whitesmoke;"> -->
-        <li class="nav-item icon-placing">
-          <a class=""><i class="fas fa-cart-arrow-down"></i></a>
-        </li>
-      </ul>
-    </div>
-   
-  </nav>
-  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" ui-sref="index.home">
+            <img src="/images/logo2.jpg" style="width: 70px; height:45px" alt="logo" class="site-logo">
+        </a>
+
+        <!-- Links -->
+        <div class="flex-nav">
+            <ul class="navbar-nav nav-styles">
+                <li class="nav-item icon-placing">
+                    <a class=""><i class="fas fa-phone-alt"> 786 802 9008 </i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="index.home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="index.shop">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" ui-sref="index.previewitem">Preview Item</a>
+                </li>
+                <li class="nav-item icon-placing">
+                    <a class=""><i class="fas fa-envelope-open"></i></a>
+                </li>
+                <!-- <hr style="width: 1px; height: 50px; display: inline-block; margin-top:-15px; background-color: whitesmoke;"> -->
+                <li class="nav-item icon-placing">
+                    <a class=""><i class="fas fa-cart-arrow-down"></i></a>
+                    <span class="badgenotification badge-info badge"> 1</span>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
     <header>
-      <div class="pagetitle"> 
-        <h1>www.seawavearts.com</h1>
-      </div>
+        <div class="pagetitle">
+            <h1>www.seawavearts.com</h1>
+        </div>
     </header>
-  
-  
+
+
     <div ui-view="mainContent"></div>
-  
-   
-  <footer class="mainFooter">
-  
-  <p>©2018 by www.seawavearts.com. Proudly created with </p>
-  
-  </footer>
+
+
+    <footer class="mainFooter">
+
+        <p>©2018 by www.seawavearts.com. Proudly created with </p>
+
+    </footer>
 </div>
