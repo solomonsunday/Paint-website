@@ -1,9 +1,13 @@
 (function() {
-
     "use strict"
     angular.module("paintApp").controller("previewitemCtrl", ["$scope", "$state", function($scope, $state) {
 
         var vm = this;
+
+        var detail = localStorage.getItem("detail");
+        if (detail !== undefined || detail !== null) {
+            vm.paint = JSON.parse(detail);
+        }
 
 
         // Get the modal
@@ -46,8 +50,5 @@
         vm.close = function() {
             modal.style.display = "none";
         }
-
-
-
     }])
 })();

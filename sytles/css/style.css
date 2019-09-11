@@ -66,6 +66,8 @@ h5 {
     margin-right: 2px;
     margin-bottom: 7px;
     margin-left: -12px;
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 .overlay {
@@ -90,6 +92,15 @@ h5 {
     margin-left: -15px;
 }
 
+.nav-styles {
+    padding: 19px;
+    margin-left: 888px;
+}
+
+.icon-placing {
+    margin: 8px;
+}
+
 
 /*############################################# Display Images ############################*/
 
@@ -101,6 +112,18 @@ h5 {
     font-style: italic;
     font-size: larger;
     text-align: justify;
+}
+
+.zoom {
+    transition: transform .7s;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
 
@@ -214,15 +237,6 @@ input[type=submit]:hover {
     margin-left: 428px;
 }
 
-.nav-styles {
-    padding: 19px;
-    margin-left: 782px;
-}
-
-.icon-placing {
-    margin: 8px;
-}
-
 
 /* ################# Preview Item Section###################### */
 
@@ -305,18 +319,18 @@ input[type=submit]:hover {
 }
 
 .modalprice {
-    margin-top: 16vh;
+    margin-top: 11vh;
     font-family: fantasy;
 }
 
 .modal-item-title2 {
     margin-top: 0vh;
     text-align: center;
-    font-family: fantasy;
+    font-family: cursive;
 }
 
 .Modalquantity {
-    margin-top: 16vh;
+    margin-top: 6vh;
     font-family: cursive;
     margin-left: inherit;
 }
