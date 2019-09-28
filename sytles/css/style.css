@@ -297,10 +297,9 @@ input[type=submit]:hover {
     margin-left: 23px;
 }
 
-
-/* .addtocartbtn {
-    scroll-margin-left: 3px;
-} */
+.cartbtn {
+    margin-left: 74px;
+}
 
 
 /*#################### Modal Design ###################################### */
@@ -333,4 +332,15 @@ input[type=submit]:hover {
     margin-top: 6vh;
     font-family: cursive;
     margin-left: inherit;
+}
+
+
+/*############################ SHOPPING CART DESIGN */
+
+.shopoOn {
+    margin-left: -113px;
+}
+
+.checkoutbtn {
+    margin-right: -111px;
 }

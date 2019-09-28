@@ -22,13 +22,13 @@
             <div class="quantity">
 
                 <label for="quantity">Quantity</label> <br>
-                <input type="number" id="quantity" class="qtyInput" value="1">
+                <input type="number" id="quantity" class="qtyInput" ng-model="vm.qty">
             </div>
             <!-- <div>
                 <a href="" type="button" class="
                 mt-3 AddtoCart" data-toggle="modal" ng-click="" ui-sref="" data-target="#modalinfo">Add to Cart</a>
             </div> -->
-            <button type="button" id="myBtn" name="tittletext" class="btn btn-lg btn-primary ml-3 addbtn addtocartbtn"> Add to Cart</button>
+            <button type="button" id="myBtn" name="tittletext" class="btn btn-lg btn-primary cartbtn addbtn addtocartbtn"> Add to Cart <span class="fas fa-shopping-cart" aria-hidden="true"></span></button>
 
             <!-- <button class="btn btn-primary btn-sm float-right" data-target="#modalinfo" data-toggle="modal">Sign in</button> -->
 
@@ -57,12 +57,12 @@
                         <div class="modal-item-title2">{{vm.paint.paintname}}</div>
                         <div class="Modalquantity">
 
-                            <label for="quantity">QTY: 1</label> <br>
+                            <label for="quantity">QTY:{{vm.qty}}</label> <br>
                             <!-- <input type="number" id="quantity" class="modalinput bg-dark" value="1" size="4"> -->
                         </div>
                         <div class="modalprice">
                             <h2 class="font-italic">Subtotal</h2>
-                            <h2>{{vm.paint.price}}</h2>
+                            <h2>{{vm.paint.price * vm.qty}} </h2>
                         </div>
 
                     </div>
@@ -70,10 +70,9 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary btn-lg btn" ng-click="vm.close()">View cart</button>
+                <a ui-sref="index.shoping-cart"><button type="button" class="btn btn-primary btn-lg btn">View cart <span class="fas fa-shopping-cart" aria-hidden="true"></span></button></a>
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
         </div>
     </div>
-</div>
 </div>

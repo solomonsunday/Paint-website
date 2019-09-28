@@ -1,0 +1,47 @@
+<div class="shop-list-container">
+
+    <div class="row py-5">
+        <div class="col-md-6 shopoOn">
+            <h3>
+                <a ui-sref="index.shop">
+
+                    < Continue Shopping </h3>
+                </a>
+        </div>
+        <div class="col-md-6 ">
+            <button class="btn btn-info btn-lg fa-pull-right checkoutbtn" id="chechout">  CheckOut</button>
+
+
+
+        </div>
+        <div class="col-md-12 my-2">
+            <div class="row ">
+                <div class="form-group col-md-12">
+                    <div class="table-responsive">
+                        <table class=" my-1 table">
+                            <thead>
+                                <th>My cart(5)</th>
+                                <th>Price</th>
+                                <th>Qty</th>
+                                <th>Total</th>
+                            </thead>
+                            <tbody>
+                                <td>
+                                    <img ng-src="{{vm.paint.photo}}">
+                                    <span style="margin-top: 10px;">{{vm.paint.paintname}} </span>
+                                </td>
+                                <td>{{vm.paint.price}}</td>
+                                <td>{{vm.qty}}</td>
+                                <td>$300</td>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <hr class="border-primary">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

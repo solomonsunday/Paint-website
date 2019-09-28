@@ -8,6 +8,7 @@
                 .state('index.shop', { url: '/shop', views: { 'mainContent': { templateUrl: 'app/views/shop/shop.html', controller: 'shopCtrl as vm' } } })
                 // .state('index.previewitem', { url: '/partial', views: { 'mainContent': { templateUrl: 'app/common/partial/previewitem.html', controller: 'previewitemCtrl as vm' } } })
                 .state('index.previewitem', { url: '/previewitem', views: { 'mainContent': { templateUrl: 'app/views/previewitem/previewitem.html', controller: 'previewitemCtrl as vm' } } })
+                .state('index.shoping-cart', { url: '/shoping-cart', views: { 'mainContent': { templateUrl: 'app/views/shoping-cart/create-shopping-cart.html', controller: 'shopingCartCtrl as vm' } } })
 
 
 
