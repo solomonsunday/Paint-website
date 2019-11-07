@@ -344,3 +344,17 @@ input[type=submit]:hover {
 .checkoutbtn {
     margin-right: -111px;
 }
+
+.checkout-info {
+    text-align: center;
+    font-size: xx-large;
+    font-family: serif;
+}
+
+.info-child {
+    font-size: large;
+}
+
+.check-out-btn {
+    margin-right: 13vw;
+}
