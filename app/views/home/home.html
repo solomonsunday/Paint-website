@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <div class="card">
+    <!-- <div class="card card-body">
         <div class="row img-fluid slideImg">
             <div ng-repeat="paint in vm.paints" class="col-md-3 img-thumbnail rounded">
                 <a class="img-thumbnail" ng-click="vm.detail(paint)">
@@ -10,6 +10,28 @@
                 </a>
             </div>
 
+        </div>
+    </div> -->
+    <div class="container text-center my-3">
+        <div class="row mx-auto my-auto">
+            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-4">
+                            <div class="card card-body">
+                                <div ng-repeat="paint in vm.paints" class="col-md-3 img-thumbnail rounded">
+                                    <a class="img-thumbnail" ng-click="vm.detail(paint)">
+                                        <img ng-src="{{ paint.photo }}" class="img-design" />
+                                        <div class="paintDetail"> {{paint.paintname}}</div> <br>
+                                        <div class="paintDetail"> {{paint.price}}</div>
+                                        <div class="overlay">Click to Buy</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <br><br>

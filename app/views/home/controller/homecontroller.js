@@ -1,7 +1,8 @@
-(function() {
+(function () {
 
     "use strict";
-    angular.module("paintApp").controller("homeCtrl", ["$scope", "$state", function($scope, $state) {
+
+    angular.module("paintApp").controller("homeCtrl", ["$scope", "$state", function ($scope, $state) {
 
         var vm = this;
 
@@ -17,11 +18,20 @@
         //     $state.go("index.previewitem")
         // }
 
-        vm.detail = function(item) {
+        vm.detail = function (item) {
             localStorage.setItem("detail", JSON.stringify(item));
             $state.go("index.previewitem")
         }
 
 
+
+
     }])
+
+
 })();
+
+
+
+
+
