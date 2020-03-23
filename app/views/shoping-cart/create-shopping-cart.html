@@ -5,11 +5,8 @@
             <h3>
                 <a ui-sref="index.shop">
 
-                    < Continue Shopping </h3>
-                </a>
-        </div>
-        <div class="col-md-6 ">
-            <button class="btn btn-info btn-lg fa-pull-right checkoutbtn" id="myBtn">  CheckOut</button>
+                    < Continue Shopping </h3> </a> </div> <div class="col-md-6 ">
+                        <button class="btn btn-info btn-lg fa-pull-right checkoutbtn" id="myBtn"> CheckOut</button>
 
 
 
@@ -27,12 +24,12 @@
                             </thead>
                             <tbody>
                                 <td>
-                                    <img ng-src="{{vm.paint.photo}}">
+                                    <img ng-src="{{vm.paint.photo}}" style="width: 130px; height:130px">
                                     <span style="margin-top: 10px;">{{vm.paint.paintname}} </span>
                                 </td>
                                 <td>{{vm.paint.price}}</td>
-                                <td>{{vm.qty}}</td>
-                                <td>$300</td>
+                                <td>{{vm.paint.qty}}</td>
+                                <td>{{vm.paint.price * vm.qty}}</td>
                             </tbody>
                         </table>
 
@@ -61,7 +58,9 @@
 
             </div>
             <div class="modal-footer">
-                <a ui-sref="index.shoping-cart"><button type="button" class="btn btn-primary btn-lg btn check-out-btn" >Got It <span class="fas fa-thumbs-up" aria-hidden="true"></span></button></a>
+                <a ui-sref="index.shoping-cart"><button type="button"
+                        class="btn btn-primary btn-lg btn check-out-btn">Got It <span class="fas fa-thumbs-up"
+                            aria-hidden="true"></span></button></a>
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
         </div>

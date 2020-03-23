@@ -2,12 +2,18 @@
 
     <div class="row col-md-12">
         <div class="preview-content col-6 tiles">
-            <span class="Item-title"> <h2>{{vm.paint.paintname}} </h2></span>
+            <span class="Item-title">
+                <h2>{{vm.paint.paintname}} </h2>
+            </span>
             <div class="item-sample">
                 <img ng-src="{{vm.paint.photo}}" style="width: 498px; height:373px">
             </div>
             <div class="write-up">
-                <p> Feel the earth rumble as this silver avalanche comes silently over your wall.... With ice crackling, it's ready to burst at any moment! (The varnish has diagonal slits, giving the appearance of cracked ice on top of the painting.) <br>                    Watch my YouTube video to see how I made it... https://youtu.be/ebV_3AMuSl0 Framing options are available for an additional cost. Contact me for details!
+                <p> Feel the earth rumble as this silver avalanche comes silently over your wall.... With ice crackling,
+                    it's ready to burst at any moment! (The varnish has diagonal slits, giving the appearance of cracked
+                    ice on top of the painting.) <br> Watch my YouTube video to see how I made it...
+                    https://youtu.be/ebV_3AMuSl0 Framing options are available for an additional cost. Contact me for
+                    details!
                 </p>
             </div>
 
@@ -28,14 +34,17 @@
                 <a href="" type="button" class="
                 mt-3 AddtoCart" data-toggle="modal" ng-click="" ui-sref="" data-target="#modalinfo">Add to Cart</a>
             </div> -->
-            <button type="button" id="myBtn" name="tittletext" class="btn btn-lg btn-primary cartbtn addbtn addtocartbtn"> Add to Cart <span class="fas fa-shopping-cart" aria-hidden="true"></span></button>
+            <button type="button" id="myBtn" name="tittletext"
+                class="btn btn-lg btn-primary cartbtn addbtn addtocartbtn"> Add to Cart <span
+                    class="fas fa-shopping-cart" aria-hidden="true"></span></button>
 
             <!-- <button class="btn btn-primary btn-sm float-right" data-target="#modalinfo" data-toggle="modal">Sign in</button> -->
 
 
             <div class="write-up">
                 <h1>SHIPPING INFO</h1>
-                <p> Please contact me directly about shipping and delivery of this painting so we can discuss pricing and options.
+                <p> Please contact me directly about shipping and delivery of this painting so we can discuss pricing
+                    and options.
                     <br> Thanks!
                     <br> ~ Martha</p>
             </div>
@@ -61,8 +70,8 @@
                             <!-- <input type="number" id="quantity" class="modalinput bg-dark" value="1" size="4"> -->
                         </div>
                         <div class="modalprice">
-                            <h2 class="font-italic">Subtotal</h2>
-                            <h2>{{vm.paint.price * vm.qty}} </h2>
+                            <h2 class="font-weight-bold text-warning">Subtotal</h2>
+                            <h2 class="text-warning">{{vm.paint.price * vm.qty}} </h2>
                         </div>
 
                     </div>
@@ -70,7 +79,8 @@
 
             </div>
             <div class="modal-footer">
-                <a ui-sref="index.shoping-cart"><button type="button" class="btn btn-primary btn-lg btn">View cart <span class="fas fa-shopping-cart" aria-hidden="true"></span></button></a>
+                <a ui-sref="index.shoping-cart"><button type="button" class="btn btn-primary btn-lg btn">View cart <span
+                            class="fas fa-shopping-cart" aria-hidden="true"></span></button></a>
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
         </div>

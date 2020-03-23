@@ -1,9 +1,9 @@
-(function() {
+(function () {
     "use strict"
-    angular.module("paintApp").controller("shopingCartCtrl", ["$scope", "$state", function($scope, $state) {
+    angular.module("paintApp").controller("shopingCartCtrl", ["$scope", "$state", function ($scope, $state) {
 
         var vm = this;
-        vm.qty = 1;
+        // vm.qty = 1;
         vm.cart = [];
 
         var detail = localStorage.getItem("detail");
@@ -20,30 +20,22 @@
         // Get the <span> element that closes the modal
         var leave = document.getElementsByClassName("check-out-btn")[0];
 
-        leave.onclick = function() {
+        leave.onclick = function () {
             modal.style.display = "none";
         }
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-                modal.style.display = "block";
-            }
-            // When the user clicks anywhere outside of the modal, close it
-            // window.onclick = function(event) {
-            //     if (event.target == modal) {
-            //         modal.style.display = "none";
-            //     }
-            // }
-
-        // vm.addtocart = function() {
-        //     var modalInput = document.getElementById("item");
-        //     vm.tasks.push(modalInput.value);
-        //     if (boardname !== null) {
-        //         alert("Enter a Project Name");
-        //         brake();
+        btn.onclick = function () {
+            modal.style.display = "block";
+        };
+        // When the user clicks anywhere outside of the modal, close it
+        // window.onclick = function(event) {
+        //     if (event.target == modal) {
+        //         modal.style.display = "none";
         //     }
-        //     modalInput.value = "";
         // }
+
+        vm.addtocart = function () {}
 
     }])
 })();

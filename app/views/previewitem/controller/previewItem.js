@@ -1,6 +1,6 @@
-(function() {
+(function () {
     "use strict"
-    angular.module("paintApp").controller("previewitemCtrl", ["$scope", "$state", function($scope, $state) {
+    angular.module("paintApp").controller("previewitemCtrl", ["$scope", "$state", function ($scope, $state) {
 
         var vm = this;
         vm.qty = 1;
@@ -23,20 +23,20 @@
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-                modal.style.display = "block";
-            }
-            // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
 
 
-
-
-        var total = function() {
+        var total = function () {
+            var amount = vm.qty * vm.price;
+            console.log(total);
 
         }
     }])

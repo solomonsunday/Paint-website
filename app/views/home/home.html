@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid  text-center">
     <!-- <div class="card card-body">
         <div class="row img-fluid slideImg">
             <div ng-repeat="paint in vm.paints" class="col-md-3 img-thumbnail rounded">
@@ -12,28 +12,25 @@
 
         </div>
     </div> -->
-    <div class="container text-center my-3">
-        <div class="row mx-auto my-auto">
-            <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-4">
-                            <div class="card card-body">
-                                <div ng-repeat="paint in vm.paints" class="col-md-3 img-thumbnail rounded">
-                                    <a class="img-thumbnail" ng-click="vm.detail(paint)">
-                                        <img ng-src="{{ paint.photo }}" class="img-design" />
-                                        <div class="paintDetail"> {{paint.paintname}}</div> <br>
-                                        <div class="paintDetail"> {{paint.price}}</div>
-                                        <div class="overlay">Click to Buy</div>
-                                    </a>
-                                </div>
-                            </div>
+    <div class="mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="row ml-1 w-100">
+                        <div ng-repeat="paint in vm.paints" class="card card-body col-md-3 img-thumbnail rounded">
+                            <a class="img-thumbnail" ng-click="vm.detail(paint)">
+                                <img class="img-design" ng-src="{{ paint.photo }}" />
+                                <div class="paintDetail"> {{paint.paintname}}</div> <br>
+                                <div class="paintDetail"> {{paint.price}}</div>
+                                <div class="overlay">Click to Buy</div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <br><br>
 
 
@@ -41,11 +38,13 @@
 
         <div>
             <a ui-sref="index.shop">
-                <p class="badge-pill bg-danger mx-auto py-2 flo" style="text-align: center">Click here to See More Painting</p>
+                <p class="badge-pill bg-danger mx-auto py-2 flo" style="text-align: center">Click here to See More
+                    Painting</p>
             </a>
         </div>
         <div class="text-center">
-            <img src="/images/March 11.jpg" class="align-content-center rounded-circle" width="400px" height="400px" alt="Owner's Image">
+            <img src="/images/March 11.jpg" class="align-content-center rounded-circle" width="400px" height="400px"
+                alt="Owner's Image">
         </div>
     </div>
     <div id="" class="page-content">
@@ -55,19 +54,27 @@
         <div class="content">
             <h3> Higher Living Art </h3>
 
-            <p> Hi, I'm Lisa Benson and I am excited to share my fun and inspiring creations with you. I currently live in Utah, and am an Actress/Model/Singer/Performer/Healer....and Artist!</p>
+            <p> Hi, I'm Lisa Benson and I am excited to share my fun and inspiring creations with you. I currently live
+                in Utah, and am an Actress/Model/Singer/Performer/Healer....and Artist!</p>
 
-            </p> Long ago, I remember watching a street artist paint with spray paint as our family was on vacation somewhere, and my parents decided to buy some when we got home so we could try it out ourselves!</p>
+            </p> Long ago, I remember watching a street artist paint with spray paint as our family was on vacation
+            somewhere, and my parents decided to buy some when we got home so we could try it out ourselves!</p>
             ​
-            <p> We painted some really cool space scenes, with planets and stars, and whatever else we could think of.</p>
+            <p> We painted some really cool space scenes, with planets and stars, and whatever else we could think of.
+            </p>
 
 
-            <p> This inspired me later in life, and I thought I'd try some new things with spray paint.... and boy has it been fun! </p>
+            <p> This inspired me later in life, and I thought I'd try some new things with spray paint.... and boy has
+                it been fun! </p>
 
-            <p> I have now ventured into fluid acrylics, and even mixing the two mediums together. Loving every minute of it!! </p> ​
-            <p> Creating with color has been so healing for me. It's given me a sense of freedom of expression, and it has really been exciting to see what new things I can come up with.</p>
-            <p> I am continuing to expand the kinds of art I create, and I am having such a blast! Anything is possible, right?!</p>
-            <p> If you are interested in purchasing any of my paintings, or would like to commission me to do a piece for you, please message me - I'd love to create something wonderful for you. </p>
+            <p> I have now ventured into fluid acrylics, and even mixing the two mediums together. Loving every minute
+                of it!! </p> ​
+            <p> Creating with color has been so healing for me. It's given me a sense of freedom of expression, and it
+                has really been exciting to see what new things I can come up with.</p>
+            <p> I am continuing to expand the kinds of art I create, and I am having such a blast! Anything is possible,
+                right?!</p>
+            <p> If you are interested in purchasing any of my paintings, or would like to commission me to do a piece
+                for you, please message me - I'd love to create something wonderful for you. </p>
             <p> Enjoy!</p>
         </div>
 
@@ -124,7 +131,7 @@
         <div class="col-6 contact-info">
             <h1 class="contact-me mb-5">Contact Me</h1>
             <p class="author-name mb-5">Martha Esteban</p>
-            <address class="author-address mb-5">  Greenaches , Florida</address>
+            <address class="author-address mb-5"> Greenaches , Florida</address>
             <p class="author-email mb-5">martha@ hosting.com</p>
             <p class="author-number mb-5">786 802 9008</p>
         </div>
@@ -144,7 +151,8 @@
                     <input type="text" id="lname" name="subject" placeholder=" Enter Your Subject..">
 
                     <label for="subject">Message</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:100px"></textarea>
 
                     <input type="submit" value="Send">
                 </form>
@@ -157,3 +165,26 @@
 
     </div>
 </div>
+<!-- <script>
+    $('#recipeCarousel').carousel({
+        interval: 1000
+    })
+
+    $('.carousel .carousel-item').each(function () {
+        var minPerSlide = 4;
+        var next = $(this).next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+
+        for (var i = 0; i < minPerSlide; i++) {
+            next = next.next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+
+            next.children(':first-child').clone().appendTo($(this));
+        }
+    });
+</script> -->
