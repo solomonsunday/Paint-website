@@ -22,14 +22,14 @@
                                 <th>Qty</th>
                                 <th>Total</th>
                             </thead>
-                            <tbody>
+                            <tbody ng-repeat="paint in vm.paints">
                                 <td>
-                                    <img ng-src="{{vm.paint.photo}}" style="width: 130px; height:130px">
-                                    <span style="margin-top: 10px;">{{vm.paint.paintname}} </span>
+                                    <img ng-src="{{paint.photo}}" style="width: 130px; height:130px">
+                                    <span style="margin-top: 10px;">{{paint.paintname}} </span>
                                 </td>
-                                <td>{{vm.paint.price}}</td>
-                                <td>{{vm.paint.qty}}</td>
-                                <td>{{vm.paint.price * vm.qty}}</td>
+                                <td>{{paint.price}}</td>
+                                <td>{{paint.qty}}</td>
+                                <td>{{paint.price * paint.qty}}</td>
                             </tbody>
                         </table>
 

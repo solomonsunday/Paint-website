@@ -9,13 +9,13 @@
                     <div class="overlay">Click to Buy</div>
                 </a>
             </div>
-
+ng-click="vm.loadMore()"
         </div>
     </div> -->
     <div class="mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
-                <div class="carousel-item active">
+                <div class="carousel-item" ng-class="{active:!$index}">
                     <div class="row ml-1 w-100">
                         <div ng-repeat="paint in vm.paints" class="card card-body col-md-3 img-thumbnail rounded">
                             <a class="img-thumbnail" ng-click="vm.detail(paint)">
@@ -28,6 +28,18 @@
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" ng-click="vm.moreSlide()"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle"
+                    aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" ng-click="vm.paints()"
+                data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle"
+                    aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 
@@ -38,8 +50,8 @@
 
         <div>
             <a ui-sref="index.shop">
-                <p class="badge-pill bg-danger mx-auto py-2 flo" style="text-align: center">Click here to See More
-                    Painting</p>
+                <h4 class=" badge badge-pill bg-danger w-25 py-3 flo" style="text-align: center">Click here to See More
+                    Painting</h4>
             </a>
         </div>
         <div class="text-center">

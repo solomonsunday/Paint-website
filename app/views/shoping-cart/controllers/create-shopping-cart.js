@@ -6,9 +6,9 @@
         // vm.qty = 1;
         vm.cart = [];
 
-        var detail = localStorage.getItem("detail");
+        var detail = localStorage.getItem("itemInCart");
         if (detail !== undefined || detail !== null) {
-            vm.paint = JSON.parse(detail);
+            vm.paints = JSON.parse(detail);
         }
 
         // Get the modal
@@ -35,7 +35,7 @@
         //     }
         // }
 
-        vm.addtocart = function () {}
+        vm.addtocart = function () { }
 
     }])
 })();
