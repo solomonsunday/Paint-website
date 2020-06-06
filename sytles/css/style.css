@@ -359,6 +359,12 @@ input[type=submit]:hover {
     margin-right: 13vw;
 }
 
+.is--pointer {
+    cursor: pointer;
+}
+
+;
+
 
 /* ################ STYLES FOR CAROUSEL */
 
@@ -366,6 +372,7 @@ input[type=submit]:hover {
     .carousel-inner .carousel-item>div {
         display: none;
     }
+
     .carousel-inner .carousel-item>div:first-child {
         display: block;
     }
@@ -381,10 +388,12 @@ input[type=submit]:hover {
 /* display 3 */
 
 @media (min-width: 768px) {
+
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
         transform: translateX(33.333%);
     }
+
     .carousel-inner .carousel-item-left.active,
     .carousel-inner .carousel-item-prev {
         transform: translateX(-33.333%);
