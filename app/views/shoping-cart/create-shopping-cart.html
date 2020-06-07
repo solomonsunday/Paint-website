@@ -23,7 +23,7 @@
                                 <th>Total</th>
                                 <th class="text-danger">Remove Item</th>
                             </thead>
-                            <tbody ng-repeat="paint in vm.paints">
+                            <tbody ng-repeat="paint in vm.paints" track by>
                                 <td>
                                     <img ng-src="{{paint.photo}}" style="width: 130px; height:130px">
                                     <span style="margin-top: 10px;">{{paint.paintname}} </span>
