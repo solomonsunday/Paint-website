@@ -87,9 +87,9 @@ h5 {
 }
 
 .badgenotification {
-    position: absolute;
-    top: 18px;
-    margin-left: -15px;
+    position: relative;
+    top: -23px;
+    margin-left: -16px;
 }
 
 .nav-styles {
@@ -334,6 +334,11 @@ input[type=submit]:hover {
     margin-left: inherit;
 }
 
+.is--pointer {
+    cursor: pointer
+}
+
+;
 
 /*############################ SHOPPING CART DESIGN */
 
@@ -345,62 +350,46 @@ input[type=submit]:hover {
     margin-right: -111px;
 }
 
-.checkout-info {
-    text-align: center;
-    font-size: xx-large;
-    font-family: serif;
-}
+/* Media Queries */
 
-.info-child {
-    font-size: large;
-}
-
-.check-out-btn {
-    margin-right: 13vw;
-}
-
-.is--pointer {
-    cursor: pointer;
-}
-
-;
-
-
-/* ################ STYLES FOR CAROUSEL */
-
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item>div {
-        display: none;
+@media screen and (max-width: 1252px) {
+    .nav-styles {
+        padding: 19px;
+        margin-left: 681px;
     }
 
-    .carousel-inner .carousel-item>div:first-child {
-        display: block;
+    @media screen and (max-width: 1252px) {
+        .nav-styles {
+            padding: 19px;
+            margin-left: 377px;
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 856px)and (max-width: 1367px) {
+    .badgenotification {
+        position: relative;
+        top: -45px;
+        margin-left: -1px;
     }
 }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
+@media screen and (max-width: 1367px) {
+    .badgenotification {
+        position: relative;
+        top: -45px;
+        margin-left: -1px;
 
-
-/* display 3 */
-
-@media (min-width: 768px) {
-
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(33.333%);
-    }
-
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-33.333%);
     }
 }
 
-.carousel-inner .carousel-item-right,
-.carousel-inner .carousel-item-left {
-    transform: translateX(0);
+@media screen and (max-width: 1253px) {
+    .badgenotification {
+        position: relative;
+        top: -19px;
+        margin-left: -15px;
+    }
 }

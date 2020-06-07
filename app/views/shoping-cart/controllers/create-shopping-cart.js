@@ -46,19 +46,19 @@
         }
 
         // Calculate the price of the total items in cart.
-        $scope.getTotal = function () {
-            var total = 0;
-            for (var i = 0; i < vm.cart.itemInCart.length; i++) {
-                var paint = vm.cart.itemInCart[i];
-                total += (paint.price * paint.qty);
-            }
-            return total;
-        }
+        // $scope.total = function () {
+        //     var total = 0;
+        //     for (var i = 0; i < vm.cart.itemInCart.length; i++) {
+        //         var paint = vm.cart.itemInCart[i];
+        //         total += (paint.price * paint.qty);
+        //     }
+        //     return total;
+        // }
 
         $scope.total = function () {
             var total = 0;
-            angular.forEach($scope.items, function (item) {
-                total += item.price * item.qty;
+            angular.forEach($scope.vm.paints, function (paint) {
+                total += paint.price * paint.qty;
             })
 
             return total;

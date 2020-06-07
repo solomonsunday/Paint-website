@@ -28,15 +28,15 @@
                                     <img ng-src="{{paint.photo}}" style="width: 130px; height:130px">
                                     <span style="margin-top: 10px;">{{paint.paintname}} </span>
                                 </td>
-                                <td>{{paint.price}}</td>
+                                <td>{{paint.price|currency}}</td>
                                 <td>{{paint.qty}}</td>
-                                <td>{{paint.price * paint.qty}}</td>
+                                <td>{{paint.price * paint.qty |currency}}</td>
                                 <td><button ng-click="remove(paint)" class="btn btn-sm btn-danger">Remove</button>
                                 </td>
                             </tbody>
                             <!-- <div class="font-weight-bold">Shopping Bag Total:</div> -->
                         </table>
-                        <div class="float-right font-weight-bold"> Shopping Bag Total:{{total()| currency: '£'}}</div>
+                        <div class="float-right font-weight-bold"> Total Price:{{total()|currency}}</div>
 
                     </div>
                     <hr class="border-primary">
