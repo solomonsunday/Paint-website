@@ -1,50 +1,48 @@
 <div class="shop-list-container">
 
-    <div class="row py-5">
-        <div class="col-md-6 shopoOn">
+    <div class="row">
+        <div class="col-md-6 col-sm-12shopoOn">
             <h3>
-                <a ui-sref="index.shop">
-
-                    < Continue Shopping </h3> </a> </div> <div class="col-md-6 ">
-                        <button class="btn btn-info btn-lg fa-pull-right checkoutbtn" id="myBtn"> CheckOut</button>
-
-
-
+                <a ui-sref="index.shop" class="conshop">
+                    < Continue Shopping </h3> </a> </div> <div class="col-md-6 col-sm-12">
+                        <button class="btn btn-info btn-lg fa-pull-right checkoutbtn " id="myBtn"> CheckOut</button>
         </div>
-        <div class="col-md-12 my-2">
-            <div class="row ">
-                <div class="form-group col-md-12">
-                    <div class="table-responsive">
-                        <table class=" my-1 table">
-                            <thead>
-                                <th>My cart(5)</th>
-                                <th>Price</th>
-                                <th>Qty</th>
-                                <th>Total</th>
-                                <th class="text-danger">Remove Item</th>
-                            </thead>
-                            <tbody ng-repeat="paint in vm.paints" track by>
-                                <td>
-                                    <img ng-src="{{paint.photo}}" style="width: 130px; height:130px">
-                                    <span style="margin-top: 10px;">{{paint.paintname}} </span>
-                                </td>
-                                <td>{{paint.price|currency}}</td>
-                                <td>{{paint.qty}}</td>
-                                <td>{{paint.price * paint.qty |currency}}</td>
-                                <td><button ng-click="remove(paint)" class="btn btn-sm btn-danger">Remove</button>
-                                </td>
-                            </tbody>
-                            <!-- <div class="font-weight-bold">Shopping Bag Total:</div> -->
-                        </table>
-                        <div class="float-right font-weight-bold"> Total Price:{{total()|currency}}</div>
+    </div>
 
-                    </div>
-                    <hr class="border-primary">
+    <div class="col-md-12 my-2">
+        <div class="row ">
+            <div class="form-group col-md-12">
+                <div class="table-responsive">
+                    <table class=" my-1 table">
+                        <thead>
+                            <th>Paint</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Total</th>
+                            <th class="text-danger">Remove Item</th>
+                        </thead>
+                        <tbody ng-repeat="paint in cart" track by>
+                            <td>
+                                <img ng-src="{{paint.photo}}" style="width: 130px; height:130px">
+                                <span style="margin-top: 10px;">{{paint.paintname}} </span>
+                            </td>
+                            <td>{{paint.price|currency}}</td>
+                            <td>{{paint.qty}}</td>
+                            <td>{{paint.price * paint.qty |currency}}</td>
+                            <td><button ng-click="remove(paint)" class="btn btn-sm btn-danger">Remove</button>
+                            </td>
+                        </tbody>
+                        <!-- <div class="font-weight-bold">Shopping Bag Total:</div> -->
+                    </table>
+                    <div class="float-right font-weight-bold"> Total Price:{{total()|currency}}</div>
 
                 </div>
+                <hr class="border-primary">
+
             </div>
         </div>
     </div>
+</div>
 
 </div>
 

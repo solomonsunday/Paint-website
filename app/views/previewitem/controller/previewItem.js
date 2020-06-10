@@ -1,6 +1,6 @@
 (function () {
     "use strict"
-    angular.module("paintApp").controller("previewitemCtrl", ["$scope", "$state", function ($scope, $state) {
+    angular.module("paintApp").controller("previewitemCtrl", ["$scope", "$state", "$rootScope", function ($scope, $state, $rootScope) {
 
         var vm = this;
         vm.paint = {};
@@ -47,7 +47,7 @@
                 if (tempItem) {
                     vm.itemList = tempItem;
                 }
-                vm.itemList.push(item);
+                $rootScope.cart.push(item);
                 localStorage.setItem("itemInCart", JSON.stringify(vm.itemList));
             }
         }

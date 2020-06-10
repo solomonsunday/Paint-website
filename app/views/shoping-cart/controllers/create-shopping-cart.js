@@ -1,11 +1,16 @@
 (function () {
     "use strict"
-    angular.module("paintApp").controller("shopingCartCtrl", ["$scope", "$state", function ($scope, $state) {
+    angular.module("paintApp").controller("shopingCartCtrl", ["$scope", "$state", "$rootScope", function ($scope, $state, $rootScope) {
 
         var vm = this;
         // vm.qty = 1;
         vm.cart = [];
         vm.total = 0;
+
+        // loadp();
+        // function loadp() {
+        //     $rootScope.cart = JSON.parse(localStorage.getItem("itemInCart"));
+        // }
 
         var detail = localStorage.getItem("itemInCart");
         if (detail !== undefined || detail !== null) {
@@ -40,24 +45,16 @@
 
 
         $scope.remove = function (paint) {
-            var index = $scope.vm.paints.indexOf(paint);
-            $scope.vm.paints.splice(index, 1);
-            localStorage.setItem('itemInCart', JSON.stringify($scope.vm.paints));
+            var index = $rootScope.cart.indexOf(paint);
+            $rootScope.cart.splice(index, 1);
+            localStorage.setItem('itemInCart', JSON.stringify($rootScope.cart));
         }
 
-        // Calculate the price of the total items in cart.
-        // $scope.total = function () {
-        //     var total = 0;
-        //     for (var i = 0; i < vm.cart.itemInCart.length; i++) {
-        //         var paint = vm.cart.itemInCart[i];
-        //         total += (paint.price * paint.qty);
-        //     }
-        //     return total;
-        // }
+
 
         $scope.total = function () {
             var total = 0;
-            angular.forEach($scope.vm.paints, function (paint) {
+            angular.forEach($rootScope.cart, function (paint) {
                 total += paint.price * paint.qty;
             })
 

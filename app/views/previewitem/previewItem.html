@@ -23,7 +23,7 @@
             <span> Insert Pagination Here</span> <br>
             <div class="item-title2">{{vm.paint.paintname}}</div>
             <div class="price">
-                <h2>{{vm.paint.price}}</h2>
+                <h2>{{vm.paint.price|currency}}</h2>
             </div>
             <div class="quantity">
 
@@ -55,7 +55,7 @@
     <div class="modal-dialog modal-dialog-scrollable ">
         <div class="modal-content bg-dark">
             <div class="modal-header">
-                <h5 class="modal-title mx-auto">Cart</h5>
+                <h5 class="modal-title mx-auto">Item Detail</h5>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -71,7 +71,7 @@
                         </div>
                         <div class="modalprice">
                             <h2 class="font-weight-bold text-warning">Subtotal</h2>
-                            <h2 class="text-warning">{{vm.paint.price * vm.paint.qty}} </h2>
+                            <h2 class="text-warning">{{vm.paint.price * vm.paint.qty|currency}} </h2>
                         </div>
 
                     </div>
@@ -79,7 +79,9 @@
 
             </div>
             <div class="modal-footer">
-                <a ui-sref="index.shoping-cart"><button type="button" class="btn btn-primary btn-lg btn">View cart <span
+                <a ui-sref="index.shop"><button type="button" class="btn btn-secondary btn-sm">Keep shopping
+                        <span class="fas fa-back-hand" aria-hidden="true"></span></button></a>
+                <a ui-sref="index.shoping-cart"><button type="button" class="btn btn-primary btn-sm">View cart <span
                             class="fas fa-shopping-cart" aria-hidden="true"></span></button></a>
                 <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
